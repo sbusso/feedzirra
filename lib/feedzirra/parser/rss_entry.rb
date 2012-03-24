@@ -8,25 +8,26 @@ module Feedzirra
 
       element :title
       element :link, :as => :url
-      
+
       element :"dc:creator", :as => :author
       element :author, :as => :author
       element :"content:encoded", :as => :content
       element :description, :as => :summary
-      
+
       element :pubDate, :as => :published
       element :pubdate, :as => :published
       element :"dc:date", :as => :published
       element :"dc:Date", :as => :published
       element :"dcterms:created", :as => :published
-      
-      
+
+      element :"media:content", :as => :image, :value => :url
+
       element :"dcterms:modified", :as => :updated
       element :issued, :as => :published
       elements :category, :as => :categories
-      
+
       element :guid, :as => :entry_id
-      
+
     end
 
   end
