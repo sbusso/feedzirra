@@ -20,8 +20,6 @@ module Feedzirra
       element :"dc:Date", :as => :published
       element :"dcterms:created", :as => :published
 
-      element :"media:content", :as => :image, :value => :url
-
       element :"dcterms:modified", :as => :updated
       element :issued, :as => :published
       elements :category, :as => :categories
