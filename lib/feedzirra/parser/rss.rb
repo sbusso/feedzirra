@@ -9,7 +9,7 @@ module Feedzirra
       element :description
       element :link, :as => :url
       elements :item, :as => :entries, :class => RSSEntry
-
+      element :image, :as => :image_url, :value => :url
       attr_accessor :feed_url
 
       def self.able_to_parse?(xml) #:nodoc:

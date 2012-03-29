@@ -23,7 +23,7 @@ module Feedzirra
       element :"dcterms:modified", :as => :updated
       element :issued, :as => :published
       elements :category, :as => :categories
-
+      element :"media:content", :as => :image_url, :value => :url
       element :guid, :as => :entry_id
 
     end
